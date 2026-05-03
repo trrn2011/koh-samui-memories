@@ -11,16 +11,17 @@ export default function Chips({ days, active }: Props) {
 
   useEffect(() => {
     if (!active || !scroller.current) return;
-    const el = scroller.current.querySelector<HTMLElement>(
+    const container = scroller.current;
+    const el = container.querySelector<HTMLElement>(
       `[data-chip="${active}"]`
     );
-    if (el) {
-      el.scrollIntoView({
-        behavior: "smooth",
-        block: "nearest",
-        inline: "center",
-      });
-    }
+    if (!el) return;
+    const targetLeft =
+      el.offsetLeft - (container.clientWidth - el.offsetWidth) / 2;
+    container.scrollTo({
+      left: Math.max(0, targetLeft),
+      behavior: "smooth",
+    });
   }, [active]);
 
   function jump(id: string) {
