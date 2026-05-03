@@ -6,6 +6,7 @@ import Polaroid from "./Polaroid";
 import Bleed from "./Bleed";
 import Quote from "./Quote";
 import RestCard from "./RestCard";
+import VideoCard from "./VideoCard";
 
 type Props = {
   data: DayData;
@@ -69,6 +70,22 @@ export default function DaySection({
         }
         if (block.kind === "quote") {
           return <Quote key={bi} text={block.text} />;
+        }
+        if (block.kind === "video") {
+          return (
+            <div key={bi} className="stack">
+              <VideoCard
+                src={block.src}
+                poster={block.poster}
+                caption={block.caption}
+                meta={block.meta}
+                rot={block.rot}
+                tape={block.tape}
+                variant={block.variant}
+                index={0}
+              />
+            </div>
+          );
         }
         return null;
       })}

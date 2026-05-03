@@ -1,5 +1,7 @@
 import img5752 from "./assets/photos/IMG_5752.jpg";
 import img5770 from "./assets/photos/IMG_5770.jpg";
+import vid5773 from "./assets/videos/IMG_5773.mp4";
+import vid5773Poster from "./assets/videos/IMG_5773_poster.jpg";
 import img5775 from "./assets/photos/IMG_5775.jpg";
 import img5807 from "./assets/photos/IMG_5807.jpg";
 import img5813 from "./assets/photos/IMG_5813.jpg";
@@ -10,6 +12,10 @@ import img5876 from "./assets/photos/IMG_5876.jpg";
 import img5889 from "./assets/photos/IMG_5889.jpg";
 import img5914 from "./assets/photos/IMG_5914.jpg";
 import img5922 from "./assets/photos/IMG_5922.jpg";
+
+export const videos = {
+  v5773: { src: vid5773, poster: vid5773Poster },
+};
 
 export const photos = {
   p5752: img5752,
@@ -44,6 +50,17 @@ export type StackBlock = {
   items: StackPhoto[];
 };
 
+export type VideoBlock = {
+  kind: "video";
+  src: string;
+  poster: string;
+  caption: string;
+  meta?: string;
+  variant?: "wide" | "tall" | "default";
+  rot?: "l" | "r" | "none";
+  tape?: boolean;
+};
+
 export type BleedBlock = {
   kind: "bleed";
   src: string;
@@ -55,7 +72,7 @@ export type QuoteBlock = {
   text: string;
 };
 
-export type ContentBlock = StackBlock | BleedBlock | QuoteBlock;
+export type ContentBlock = StackBlock | BleedBlock | QuoteBlock | VideoBlock;
 
 export type DayCover = {
   src: string;
@@ -116,11 +133,25 @@ export const days: DayData[] = [
             tape: true,
             alt: "出発前",
           },
+        ],
+      },
+      {
+        kind: "video",
+        src: videos.v5773.src,
+        poster: videos.v5773.poster,
+        caption: "Jungle Club からの眺め",
+        meta: "JUNGLE CLUB · 13:00",
+        rot: "r",
+        tape: true,
+      },
+      {
+        kind: "stack",
+        items: [
           {
             src: photos.p5775,
             caption: "Walking Street で集合",
             meta: "FISHERMAN'S VILLAGE",
-            rot: "r",
+            rot: "l",
             alt: "Fisherman's Village",
           },
         ],
