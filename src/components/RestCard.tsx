@@ -13,7 +13,7 @@ export default function RestCard({ icon, title, lines, tag }: Props) {
       className="rest"
       initial={{ opacity: 0, scale: 0.96, y: 24 }}
       whileInView={{ opacity: 1, scale: 1, y: 0 }}
-      viewport={{ once: true, margin: "-60px" }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
     >
       <motion.div

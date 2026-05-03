@@ -21,7 +21,7 @@ export default function DayCover({ data }: { data: DayCoverData }) {
         className="badge"
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        viewport={{ once: true, amount: 0.05 }}
         transition={{ duration: 0.6, ease: "easeOut" }}
       >
         {data.badge}
@@ -30,8 +30,8 @@ export default function DayCover({ data }: { data: DayCoverData }) {
       <motion.div
         className="date-stamp"
         initial={{ opacity: 0, x: 20 }}
-        whileInView={{ opacity: 0.85, x: 0 }}
-        viewport={{ once: true, margin: "-80px" }}
+        whileInView={{ opacity: 1, x: 0 }}
+        viewport={{ once: true, amount: 0.05 }}
         transition={{ duration: 0.6, delay: 0.1 }}
       >
         {data.dateStamp}
@@ -41,7 +41,7 @@ export default function DayCover({ data }: { data: DayCoverData }) {
         className="title"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, margin: "-100px" }}
+        viewport={{ once: true, amount: 0.25 }}
         transition={{ duration: 0.85, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
       >
         <h2>

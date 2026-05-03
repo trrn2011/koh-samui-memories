@@ -23,7 +23,7 @@ export default function Polaroid({
       onClick={onOpen}
       initial={{ opacity: 0, y: 32, rotate: rotDeg + (rot === "l" ? -3 : 3) }}
       whileInView={{ opacity: 1, y: 0, rotate: rotDeg }}
-      viewport={{ once: true, margin: "-50px" }}
+      viewport={{ once: true, amount: 0.15 }}
       transition={{
         duration: 0.7,
         delay: index * 0.07,
