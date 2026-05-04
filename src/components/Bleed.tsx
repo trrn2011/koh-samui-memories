@@ -1,7 +1,13 @@
 import { motion, useScroll, useTransform } from "framer-motion";
 import { useRef } from "react";
 
-export default function Bleed({ src, alt }: { src: string; alt: string }) {
+type Props = {
+  src: string;
+  alt: string;
+  caption?: string;
+};
+
+export default function Bleed({ src, alt, caption }: Props) {
   const ref = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: ref,
@@ -18,6 +24,7 @@ export default function Bleed({ src, alt }: { src: string; alt: string }) {
         style={{ scale, y }}
         loading="lazy"
       />
+      {caption ? <div className="bleed-cap">{caption}</div> : null}
     </div>
   );
 }

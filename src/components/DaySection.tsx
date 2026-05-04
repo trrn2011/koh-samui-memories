@@ -66,7 +66,14 @@ export default function DaySection({
           );
         }
         if (block.kind === "bleed") {
-          return <Bleed key={bi} src={block.src} alt={block.alt} />;
+          return (
+            <Bleed
+              key={bi}
+              src={block.src}
+              alt={block.alt}
+              caption={block.caption}
+            />
+          );
         }
         if (block.kind === "quote") {
           return <Quote key={bi} text={block.text} />;
