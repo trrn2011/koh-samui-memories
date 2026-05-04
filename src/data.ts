@@ -139,10 +139,10 @@ export const days: DayData[] = [
       items: [
         { time: "07:30", text: "サムイ空港 着" },
         { time: "08:00", text: "ヴィラ チェックイン" },
-        { time: "12:00", text: "Jungle Club（車30分）" },
-        { time: "17:00", text: "Fisherman's Village" },
-        { time: "19:00", text: "Coco Tam's で夕食" },
-        { time: "22:00", text: "マッサージで〆" },
+        { time: "13:00", text: "Jungle Club（車30分）" },
+        { time: "14:45", text: "Fisherman's Village" },
+        { time: "16:45", text: "マッサージ" },
+        { time: "18:20", text: "Coco Tam's で夕食" },
       ],
     },
     blocks: [
@@ -245,11 +245,12 @@ export const days: DayData[] = [
     program: {
       title: "Today's Program",
       items: [
-        { time: "AM", text: "ビーチでブランコ" },
         { time: "11:00", text: "Central Samui · The White Lotus" },
-        { time: "13:00", text: "昼ごはん" },
+        { time: "13:15", text: "昼ごはん" },
+        { time: "14:00", text: "ビーチ" },
         { time: "17:00", text: "Big Buddha 桟橋 → パンガン島" },
-        { time: "20:00", text: "Full Moon Party @ Haad Rin" },
+        { time: "18:30", text: "パンガン上陸" },
+        { time: "20:40", text: "Full Moon Party @ Haad Rin" },
         { time: "深夜", text: "Moonrise / Phangan Mantra" },
       ],
     },
@@ -392,7 +393,7 @@ export const days: DayData[] = [
     program: {
       title: "Today's Program",
       items: [
-        { time: "AM", text: "ロングテール船 出航" },
+        { time: "09:30", text: "ロングテール船 出航" },
         { time: "10:00", text: "Pig Island（豚と泳ぐ）" },
         { time: "12:00", text: "シュノーケリング" },
         { time: "夕方", text: "ヴィラ戻り" },
