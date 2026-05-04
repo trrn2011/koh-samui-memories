@@ -240,15 +240,14 @@ export const days: DayData[] = [
       titleA: "Beach &",
       titleB: "Full Moon",
       titleEm: true,
-      sub: "ビーチ → Central Samui → 仮眠 → Big Buddha 桟橋 → パンガン島",
+      sub: "ビーチ → Central Samui → 昼ごはん → Big Buddha 桟橋 → パンガン島",
     },
     program: {
       title: "Today's Program",
       items: [
         { time: "AM", text: "ビーチでブランコ" },
         { time: "11:00", text: "Central Samui · The White Lotus" },
-        { time: "13:00", text: "チームランチ" },
-        { time: "15:00", text: "ヴィラ戻って仮眠" },
+        { time: "13:00", text: "昼ごはん" },
         { time: "17:00", text: "Big Buddha 桟橋 → パンガン島" },
         { time: "20:00", text: "Full Moon Party @ Haad Rin" },
         { time: "深夜", text: "Moonrise / Phangan Mantra" },
@@ -273,11 +272,11 @@ export const days: DayData[] = [
         items: [
           {
             src: photos.p5807,
-            caption: "本日のチームランチ",
+            caption: "本日の昼ごはん",
             meta: "SAMUI · 13:13",
             variant: "wide",
             rot: "r",
-            alt: "チームランチ",
+            alt: "昼ごはん",
           },
         ],
       },
@@ -388,7 +387,7 @@ export const days: DayData[] = [
       titleA: "Private",
       titleB: "Long-tail",
       titleEm: true,
-      sub: "ロングテール船貸切 → Pig Island → シュノーケリング → 花かご & シャンパン",
+      sub: "ロングテール船貸切 → Pig Island → シュノーケリング",
     },
     program: {
       title: "Today's Program",
@@ -396,7 +395,6 @@ export const days: DayData[] = [
         { time: "AM", text: "ロングテール船 出航" },
         { time: "10:00", text: "Pig Island（豚と泳ぐ）" },
         { time: "12:00", text: "シュノーケリング" },
-        { time: "14:00", text: "花かご · シャンパン on the boat" },
         { time: "夕方", text: "ヴィラ戻り" },
       ],
     },
