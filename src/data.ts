@@ -5,8 +5,8 @@ import img5807 from "./assets/photos/IMG_5807.jpg";
 import img5813 from "./assets/photos/IMG_5813.jpg";
 import img5828 from "./assets/photos/IMG_5828.jpg";
 import img5852 from "./assets/photos/IMG_5852.jpg";
-import img5872 from "./assets/photos/IMG_5872.jpg";
-import img5876 from "./assets/photos/IMG_5876.jpg";
+import img5825 from "./assets/photos/IMG_5825.jpg";
+import img6581 from "./assets/photos/IMG_6581.jpg";
 import img5889 from "./assets/photos/IMG_5889.jpg";
 import img5914 from "./assets/photos/IMG_5914.jpg";
 import img5922 from "./assets/photos/IMG_5922.jpg";
@@ -37,8 +37,8 @@ export const photos = {
   p5813: img5813,
   p5828: img5828,
   p5852: img5852,
-  p5872: img5872,
-  p5876: img5876,
+  p5825: img5825,
+  p6581: img6581,
   p5889: img5889,
   p5914: img5914,
   p5922: img5922,
@@ -323,18 +323,18 @@ export const days: DayData[] = [
           },
         ],
       },
-      { kind: "bleed", src: photos.p5872, alt: "Full Moon の街路" },
+      { kind: "bleed", src: photos.p5825, alt: "Walking Street の夕暮れ", caption: "Walking Street へ。" },
       {
         kind: "stack",
         cols: 2,
         items: [
           {
-            src: photos.p5876,
-            caption: "girls night",
-            meta: "23:26",
+            src: photos.p6581,
+            caption: "肩車で乾杯",
+            meta: "23:44",
             variant: "tall",
             rot: "r",
-            alt: "フェイスペイント",
+            alt: "Full Moon の盛り上がり",
           },
           {
             src: photos.p5885,

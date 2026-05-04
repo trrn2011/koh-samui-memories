@@ -31,7 +31,7 @@ export default function Footer() {
         animate={{ rotate: [-4, 4, -4] }}
         transition={{ duration: 3.6, repeat: Infinity, ease: "easeInOut" }}
       >
-        ~ おかえりなさい ~
+        🌴
       </motion.div>
       <h2>
         {typed}
@@ -44,10 +44,9 @@ export default function Footer() {
           |
         </motion.span>
       </h2>
-      <p>5 days · 12 photos · 6 friends</p>
+      <p>5 days · 6 friends</p>
       <p>Plai Laem · Bo Put · Phangan · Pig Island</p>
-      <div className="sig">— お疲れ様でした —</div>
-      <div className="meta">PRESSED · 2026.05.03</div>
+      <div className="meta">PRESSED · 2026.05.04</div>
     </motion.footer>
   );
 }
