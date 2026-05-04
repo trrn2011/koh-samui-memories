@@ -22,11 +22,15 @@ import img5925 from "./assets/photos/IMG_5925.jpg";
 import img5145 from "./assets/photos/IMG_5145.jpg";
 import img5960 from "./assets/photos/IMG_5960.jpg";
 import imgSunset from "./assets/photos/IMG_SUNSET.jpg";
+import img5907 from "./assets/photos/IMG_5907.jpg";
 import vid5773 from "./assets/videos/IMG_5773.mp4";
 import vid5773Poster from "./assets/videos/IMG_5773_poster.jpg";
+import vid6861 from "./assets/videos/IMG_6861.mp4";
+import vid6861Poster from "./assets/videos/IMG_6861_poster.jpg";
 
 export const videos = {
   v5773: { src: vid5773, poster: vid5773Poster },
+  v6861: { src: vid6861, poster: vid6861Poster },
 };
 
 export const photos = {
@@ -54,6 +58,7 @@ export const photos = {
   p5145: img5145,
   p5960: img5960,
   pSunset: imgSunset,
+  p5907: img5907,
 };
 
 export type ProgramItem = { time: string; text: string };
@@ -304,12 +309,6 @@ export const days: DayData[] = [
         ],
       },
       {
-        kind: "bleed",
-        src: photos.pSunset,
-        alt: "サンセットビーチ集合写真",
-        caption: "Big Buddha 桟橋へ向かう前に。",
-      },
-      {
         kind: "stack",
         items: [
           {
@@ -375,6 +374,14 @@ export const days: DayData[] = [
       ],
       tag: "— 05 · 02 · SAT —",
     },
+    blocks: [
+      {
+        kind: "bleed",
+        src: photos.p5907,
+        alt: "ヴィラの夜プール",
+        caption: "深夜のプールサイドで。",
+      },
+    ],
   },
   {
     id: "d4",
@@ -450,6 +457,21 @@ export const days: DayData[] = [
         ],
       },
       { kind: "quote", text: "海も空も貸切。今回いちばんの空の青。" },
+      {
+        kind: "bleed",
+        src: photos.pSunset,
+        alt: "サンセットビーチ集合写真",
+        caption: "ヴィラ戻ってからの夕焼け。",
+      },
+      {
+        kind: "video",
+        src: videos.v6861.src,
+        poster: videos.v6861.poster,
+        caption: "trip's end · sunset jumps",
+        meta: "BEACH · 18:52",
+        rot: "l",
+        tape: true,
+      },
     ],
   },
   {
